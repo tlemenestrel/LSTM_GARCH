@@ -2,24 +2,15 @@
 
 ## Introduction
 
-This repository contains a Python implementation of a Hybrid LSTM-GARCH model for forecasting volatility. It is based on the following [paper](https://www.sciencedirect.com/science/article/pii/S0957417418301416).
+Volatility plays an important role in financial markets for pricing derivatives, portfolio risk management and hedging strategies. Therefore, being able to correctly predict volatility of stock markets is crucial. This repository contains a Python implementation of a Hybrid LSTM-GARCH model for forecasting volatility. It is based on the following [paper](https://www.sciencedirect.com/science/article/pii/S0957417418301416). The GARCH models are built using PyFlux while the LSTMs are built with TensorFlow and Keras.
 
-## Table of Contents
-
-- [Genome Processing](#Genome-Processing)
-- [Recommendation Algorithm](#Recommendation-Algorithm)
-- [Airfoil Computations](#Airfoil-Computations)
-- [Truss Linear Equations](#Truss-Linear-Equations)
-- [Image Processing](#Image-Processing)
-
-## Genome Processing
+## Hybrid LSTM-GARCH model architecture
 
 <table>
 <tr>
 <td>
   
 **Genome Processing** is a Python software to generate _DNA references_ and compute the alignments of given DNA sequences with the _generated reference_. 
-This allows to identify **regions of similarity** that may be a consequence of _evolutionary relationships_ between the sequences. 
 
 The code generates an **output file** that contains the index of the _matches of each sequence with the reference_ and the _percentage of how many matches
 each sequence has_ (i.e. if a sequence matche once, twice or does not match the reference) and the _computing time_.
@@ -31,27 +22,3 @@ each sequence has_ (i.e. if a sequence matche once, twice or does not match the 
 </td>
 </tr>
 </table>
-
-### Terminal commands and outputs
-
-1. First, cd into the genome_processing folder:
-
-    ```
-    $ cd genome_processing
-    ```
-
-2. Then, run the following command to process a given sequence:
-
-    ```
-    $ python processdata.py references/ref_3.txt reads/reads_3.txt alignments/align_3.txt
-    ```
-3. You should get the following output:
-    ```
-    reference_length: 100000
-    number reads: 60000
-    aligns 0: 0.15
-    aligns 1: 0.75
-    aligns 2: 0.1
-    elapsed time: 23.56
-    ```
-
