@@ -2,9 +2,7 @@
 
 ## Introduction
 
-This repository contains a Python implementation of a Hybrid LSTM-GARCH model for forecasting volatility. It is based of the following paper:
-
-[a link](https://www.sciencedirect.com/science/article/pii/S0957417418301416)
+This repository contains a Python implementation of a Hybrid LSTM-GARCH model for forecasting volatility. It is based on the following [paper](https://www.sciencedirect.com/science/article/pii/S0957417418301416).
 
 ## Table of Contents
 
